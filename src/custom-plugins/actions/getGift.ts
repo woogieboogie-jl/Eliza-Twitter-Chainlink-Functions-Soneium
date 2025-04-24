@@ -37,7 +37,7 @@ export class GetGiftAction {
      * @throws Will throw an error if contract address, slot ID, version, or subscription ID is not set.
      */
     async getGift(params: GetGiftParams): Promise<Transaction> {
-        const chainName = "avalancheFuji";
+        const chainName = "soneiumMinato";
         const contractAddress: `0x${string}` =  "0x00" // dev TODO
         const donHostedSecretsSlotID:number = Infinity // dev TODO
         const donHostedSecretsVersion:number = Infinity // dev TODO

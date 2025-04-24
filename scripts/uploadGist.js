@@ -6,7 +6,7 @@ const makeRequestSepolia = async () => {
   // hardcoded for Avalanche Fuji
   const routerAddress = "0xA9d587a00A31A52Ed70D6026794a8FC5E2F5dCb0";
   const donId = "fun-avalanche-fuji-1";
-  const rpcUrl = process.env.ETHEREUM_PROVIDER_AVALANCHEFUJI; // fetch Sepolia RPC URL
+  const rpcUrl = process.env.ETHEREUM_PROVIDER_SONEIUMMINATO; // fetch Sepolia RPC URL
 
   const secrets = { apikey: process.env.SUPABASE_API_KEY };
 

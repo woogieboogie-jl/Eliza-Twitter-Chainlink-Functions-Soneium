@@ -6,8 +6,8 @@ import fs from "fs";
 dotenv.config();
 
 const makeRequestSepolia = async () => {
-  if (!process.env.ETHEREUM_PROVIDER_AVALANCHEFUJI) {
-    throw new Error("ETHEREUM_PROVIDER_AVALANCHEFUJI not provided - check your environment variables");
+  if (!process.env.ETHEREUM_PROVIDER_SONEIUMMINATO) {
+    throw new Error("ETHEREUM_PROVIDER_SONEIUMMINATO not provided - check your environment variables");
   }
   if (!process.env.SUPABASE_API_KEY) {
     throw new Error("SUPABASE_API_KEY not provided - check your environment variables");
@@ -17,9 +17,9 @@ const makeRequestSepolia = async () => {
   }
 
   // hardcoded for Avalanche Fuji
-  const routerAddress = "0xA9d587a00A31A52Ed70D6026794a8FC5E2F5dCb0";
-  const donId = "fun-avalanche-fuji-1";
-  const rpcUrl = process.env.ETHEREUM_PROVIDER_AVALANCHEFUJI; // fetch Sepolia RPC URL
+  const routerAddress = "0x3704dc1eefCDCE04C58813836AEcfdBC8e7cB3D8";
+  const donId = "fun-soneium-sepolia-1";
+  const rpcUrl = process.env.ETHEREUM_PROVIDER_SONEIUMMINATO; // fetch Sepolia RPC URL
 
   const gatewayUrls = [
     "https://01.functions-gateway.testnet.chain.link/",
