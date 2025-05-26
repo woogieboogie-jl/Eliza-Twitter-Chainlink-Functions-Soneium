@@ -1,6 +1,6 @@
 /**
  * @fileoverview This file contains the implementation of the GetGiftAction class and the getGiftAction handler.
- * It interacts with a smart contract on the Avalanche Fuji testnet to send a gift request.
+ * It interacts with a smart contract on the Soneium Minato testnet to send a gift request.
  */
 
 import { formatEther, parseEther, getContract } from "viem";
@@ -42,7 +42,7 @@ export class GetGiftAction {
         const donHostedSecretsSlotID:number = Infinity // dev TODO
         const donHostedSecretsVersion:number = Infinity // dev TODO
         const clSubId:number = Infinity // dev TODO
-
+        
         if (contractAddress === "0x00" || donHostedSecretsSlotID === Infinity || donHostedSecretsVersion === Infinity || clSubId === Infinity) {
             throw new Error("Contract address, slot ID, version, or subscription ID is not set");
         }
@@ -164,7 +164,7 @@ export const getGiftAction: Action = {
                         hash: callFunctionResp.hash,
                         amount: formatEther(callFunctionResp.value),
                         recipient: callFunctionResp.to,
-                        chain: "avalanchefuji",
+                        chain: "soneiumMinato",
                     },
                 });
             }

@@ -5,7 +5,7 @@ export const character: Character = {
   ...defaultCharacter,
   // name: "Eliza",
   plugins: [getGiftPlugin],
-  clients: [],
+  clients: [], // set to clients: [Clients.TWITTER]
   modelProvider: ModelProviderName.GOOGLE,
   settings: {
     secrets: {},
