@@ -41,7 +41,7 @@ contract GetGift is FunctionsClient, ERC721URIStorage {
     string constant ITEM_3_METADATA =
         "ipfs://QmNxq7GqehZf9SpCEFK7C4moxZTZPNwCer5yCAqCBNdk2a";
 
-    // Hardcode for Avalanche Fuji testnet
+    // Hardcode for Soneium Minato Testnet
     address public constant ROUTER_ADDR =
         0xA9d587a00A31A52Ed70D6026794a8FC5E2F5dCb0;
     bytes32 public constant DON_ID =

@@ -16,7 +16,7 @@ const makeRequestSepolia = async () => {
     throw new Error("EVM_PRIVATE_KEY not provided - check your environment variables");
   }
 
-  // hardcoded for Avalanche Fuji
+  // hardcoded for Soneium Minato
   const routerAddress = "0x3704dc1eefCDCE04C58813836AEcfdBC8e7cB3D8";
   const donId = "fun-soneium-sepolia-1";
   const rpcUrl = process.env.ETHEREUM_PROVIDER_SONEIUMMINATO; // fetch Sepolia RPC URL
