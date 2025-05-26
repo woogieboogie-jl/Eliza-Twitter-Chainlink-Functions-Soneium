@@ -158,7 +158,7 @@ export class TwitterPostClient {
                 "twitter_generate_room-" + this.client.profile?.username
             );
             const date = new Date(Date.now());
-            const content = "AI Agent starts!!! at " + date.toLocaleString();
+            const content = "Your AI Agent has woken up from the ashes at.. " + date.toLocaleString();
 
             elizaLogger.log(`Posting new tweet:\n ${content}`);
             this.postTweet(
